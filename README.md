@@ -1,6 +1,7 @@
-##This is a web scrapper tool that takes a URL and fetches the RSS Feeds from the URL
+## Simple WebScrapper 
+This is a web scrapper tool that takes a URL and fetches the RSS Feeds from the URL
 
-## 
+## Script Guide:
 To run without building the executable file, use:
 
 `go run . 'https://someurl.com'`
