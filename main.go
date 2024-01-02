@@ -93,7 +93,11 @@ func main() {
 		log.Fatal("PORT is not found in the environment")
 	}
 
-	feed, err := fetchData("https://www.prlog.org/news/ng/rss.xml")
+	url := os.Args[1]
+
+	fmt.Printf("Fetching data from: %v", url)
+
+	feed, err := fetchData(url)
 	if err != nil {
 		log.Fatal(err)
 	}
